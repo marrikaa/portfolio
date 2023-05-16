@@ -36,26 +36,24 @@ export const ContanctForm = () => {
           </form>
           
             <div className="direct-contact-container">
-              <ul className="contact-list">
-                <li className="list-item">
+                <div className="list-item">
                     <TfiLocationPin className='contact-icon' />
-                    <span className="contact-text place">Amsterdam, Netherlands</span></li>
-                 <li className="list-item">
+                    <span className="contact-text">Amsterdam, Netherlands</span></div>
+                 <div className="list-item">
                     <BsFillTelephoneFill className='contact-icon' />
-                    <span className="contact-text phone">(+31) 6 16480225</span>
-                </li>
-                <li className="list-item">
+                    <span className="contact-text">(+31) 6 16480225</span>
+                </div>
+                <div className="list-item">
                     <HiOutlineMail className='contact-icon' />
-                    <span className="contact-text gmail">
+                    <span className="contact-text">
                         <a href="mailto:MarikaGachechiladze0@gmail.com" title="Send me an email">
-                            MarikaGachechiladze0@gmail.com</a></span>
-                </li>      
-              </ul>
+                          MarikaGachechiladze0@gmail.com</a></span>
+                </div>      
             <hr />
             <div className="social-media-list">
-                <a href="https://www.hackerrank.com/marikagachechil1" target="_blank" className="contact-icon">
+                <a href="https://www.hackerrank.com/marikagachechil1" target="_blank">
                     <AiFillGithub  /></a>
-                <a href="https://www.linkedin.com/in/marika-gachechiladze-573778224/" target="_blank" className="contact-icon" >
+                <a href="https://www.linkedin.com/in/marika-gachechiladze-573778224/" target="_blank" >
                     <BsLinkedin  /></a>
                 <a href="https://www.hackerrank.com/marikagachechil1" target="_blank">
                     <FaHackerrank  />

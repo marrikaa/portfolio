@@ -1,5 +1,5 @@
 .profile-picture{
-    width: 300px;
+    width: 350px;
     height: auto;
     align-items: center;
     margin: 1rem;
@@ -9,12 +9,13 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+    margin:2rem 1rem;
 }
 
 .homepage{
     display: flex;
     flex-direction: column;
-    color: white;
+    color: rgba(58,58,58,255);
     justify-content: center;
     text-align: center;
     vertical-align: middle;
@@ -23,17 +24,17 @@
 
 .resume{
     text-decoration: none;
-    color: white;
+    color:  #3a3a3a;
     font-size: larger;
     border-radius: 2px;
     padding: 10px;
     border: none;
-    background: linear-gradient(to top, #09203f 0%, #537895 100%);
+    background: linear-gradient(109.6deg,#938a54 11.2%, #e4d1aa 91.1%);
     margin-right: 1rem;
 }
 
 .resume:hover{
-    background: linear-gradient(to top, #031226 0%, #325874 100%);
+    background: linear-gradient(109.6deg,#877d45 11.2%, #bfa779 91.1%);
 }
 
 .home-header{

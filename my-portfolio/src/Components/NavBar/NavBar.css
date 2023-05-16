@@ -1,5 +1,5 @@
 .home-element{
-    color: white;
+    color: rgba(58,58,58,255);
     font-size: 20px;
     margin: 1rem;
     text-align: center;
@@ -24,14 +24,14 @@
 }
 
 .icon{
-    margin: 1rem;
-    width: 2rem;
+    margin: 1rem .1rem;
+    width: 1.5rem;
     height: auto;
-    color: white;
+    color: rgba(58,58,58,255)
 }
 
 .menu-icon{
-    color: white;
+    color: #938956;
     align-items: flex-start;
 }
 .menu-icon:hover{
@@ -45,6 +45,10 @@
     }
     .home{
         visibility: visible;
+    }
+    .icon{
+        width: 2rem;
+        margin: 1rem .5rem;
     }
 }
 

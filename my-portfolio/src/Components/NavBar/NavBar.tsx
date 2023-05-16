@@ -1,10 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import'./NavBar.css'
-import gitHubIcon from '../images/socialIcons/github.png'
 import linkedinIcon from '../images/socialIcons/linkeDin.png'
 import hackerRankIcon from '../images/socialIcons/hackerRank.png'
 import {AiFillGithub} from 'react-icons/ai'
+import {BsLinkedin} from 'react-icons/bs'
+import {FaHackerrank} from 'react-icons/fa'
+
 
 
 export const NavBar = () => {
@@ -61,12 +63,16 @@ export const NavBar = () => {
             <div className='home-element' onClick={redirectToMySkills}>Skills</div>
             <div className='home-element' onClick={redirectToMyProjects}>Projects</div>
             {/* <div className='home-element' onClick={redirectToContactInfo}>Let's Contact</div> */}
-        {/* </div></div> */} */
+        {/* </div></div> */} 
         <div className='social-icons'>
-            <a href="https://www.hackerrank.com/marikagachechil1" target="_blank" ><AiFillGithub className='icon' /></a> 
-            <a href="https://www.linkedin.com/in/marika-gachechiladze-573778224/" target="_blank" ><img src={linkedinIcon} className='icon' alt="" /></a>
-            <a href="https://www.hackerrank.com/marikagachechil1" target="_blank" ><img src={hackerRankIcon} className='icon' alt="" /></a> 
-        </div>
+                <a href="https://www.hackerrank.com/marikagachechil1" target="_blank" className='icon' >
+                    <AiFillGithub  className='icon' /></a>
+                <a href="https://www.linkedin.com/in/marika-gachechiladze-573778224/" target="_blank" className='icon' >
+                    <BsLinkedin  className='icon' /></a>
+                <a href="https://www.hackerrank.com/marikagachechil1" target="_blank">
+                    <FaHackerrank className='icon' />
+                </a>
+            </div>
     </div>
     
     )
