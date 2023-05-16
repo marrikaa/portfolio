@@ -1,0 +1,50 @@
+.home-element{
+    color: white;
+    font-size: 20px;
+    margin: 1rem;
+    text-align: center;
+    white-space: nowrap;;
+}
+
+.home-element:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 21px;
+}
+
+.home{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.navbar-elements{
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem 2rem ;
+}
+
+.icon{
+    margin: 1rem;
+    width: 2rem;
+    height: auto;
+    color: white;
+}
+
+.menu-icon{
+    color: white;
+    align-items: flex-start;
+}
+.menu-icon:hover{
+    font-weight: bolder;
+}
+
+
+@media (min-width: 800px) {
+    .menu-icon{
+        visibility: hidden;
+    }
+    .home{
+        visibility: visible;
+    }
+}
+

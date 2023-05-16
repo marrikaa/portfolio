@@ -1,0 +1,48 @@
+.profile-picture{
+    width: 300px;
+    height: auto;
+    align-items: center;
+    margin: 1rem;
+}
+
+.homepage-text{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.homepage{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 3rem;
+}
+
+.resume{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    border-radius: 2px;
+    padding: 10px;
+    border: none;
+    background: linear-gradient(to top, #09203f 0%, #537895 100%);
+    margin-right: 1rem;
+}
+
+.resume:hover{
+    background: linear-gradient(to top, #031226 0%, #325874 100%);
+}
+
+.home-header{
+    margin-top: 5rem;
+}
+
+@media (min-width: 800px) {
+    .homepage{
+        flex-direction: row;
+        margin-top: 5rem;
+    }
+}

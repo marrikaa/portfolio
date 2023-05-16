@@ -1,0 +1,31 @@
+.skill-logo{
+    width: auto;
+    height: 3rem;
+}
+
+.skill-name{
+    color: white;
+}
+.each-element{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.skills{
+    /* background:  repeating-radial-gradient(#09203f 2px, #537895 5px,rgb(130, 178, 214) 100px); */
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+@media (min-width: 600px) {
+    .skills{
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .skills{
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+} 

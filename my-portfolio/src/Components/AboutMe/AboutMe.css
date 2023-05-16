@@ -1,0 +1,8 @@
+.about-me{
+    color: white;
+    line-height: 2rem;
+    font-size: larger;
+    background-color: none;
+    padding: 2rem;
+    /* background: linear-gradient(to top,#284e6c 0%, #03142b 100%); */
+}
