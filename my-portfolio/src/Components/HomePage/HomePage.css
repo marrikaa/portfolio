@@ -19,7 +19,7 @@
     justify-content: center;
     text-align: center;
     vertical-align: middle;
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 .resume{
@@ -29,12 +29,13 @@
     border-radius: 2px;
     padding: 10px;
     border: none;
-    background: linear-gradient(109.6deg,#938a54 11.2%, #e4d1aa 91.1%);
+    background: linear-gradient(109.6deg, #c3c1c1 11.2%, #e5e1de 91.1%);
     margin-right: 1rem;
 }
 
 .resume:hover{
-    background: linear-gradient(109.6deg,#877d45 11.2%, #bfa779 91.1%);
+    background: linear-gradient(109.6deg, #858585 11.2%, #dedbd8 91.1%);
+    cursor: pointer;
 }
 
 .home-header{

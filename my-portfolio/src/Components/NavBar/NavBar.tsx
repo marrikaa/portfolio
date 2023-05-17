@@ -6,6 +6,8 @@ import hackerRankIcon from '../images/socialIcons/hackerRank.png'
 import {AiFillGithub} from 'react-icons/ai'
 import {BsLinkedin} from 'react-icons/bs'
 import {FaHackerrank} from 'react-icons/fa'
+import {SlMenu} from 'react-icons/sl'
+
 
 
 
@@ -49,31 +51,24 @@ export const NavBar = () => {
     }
 
   return (
-    <div className='navbar-elements'>
-        <div className="home">
-            <div className='home-element' onClick={redirectToHomePage}>Home</div>
-            <div className='home-element' onClick={redirectToAboutMe}>About</div>
-            <div className='home-element' onClick={redirectToMySkills}>Skills</div>
-            <div className='home-element' onClick={redirectToMyProjects}>Projects</div>
-            {/* <div className='home-element' onClick={redirectToContactInfo}>Let's Contact</div> */}
-        </div>
-        {/* <div className='menu-icon home-element'><HiMenu />
-            <div className='home-element' onClick={redirectToHomePage}>Home</div>
-            <div className='home-element' onClick={redirectToAboutMe}>About</div>
-            <div className='home-element' onClick={redirectToMySkills}>Skills</div>
-            <div className='home-element' onClick={redirectToMyProjects}>Projects</div>
-            {/* <div className='home-element' onClick={redirectToContactInfo}>Let's Contact</div> */}
-        {/* </div></div> */} 
-        <div className='social-icons'>
-                <a href="https://www.hackerrank.com/marikagachechil1" target="_blank" className='icon' >
-                    <AiFillGithub  className='icon' /></a>
-                <a href="https://www.linkedin.com/in/marika-gachechiladze-573778224/" target="_blank" className='icon' >
-                    <BsLinkedin  className='icon' /></a>
-                <a href="https://www.hackerrank.com/marikagachechil1" target="_blank">
-                    <FaHackerrank className='icon' />
-                </a>
+        <header className="header">
+            <input className="menu-btn" type="checkbox" id="menu-btn" />
+            <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
+                <ul className="menu">
+                    <li><div className='home-element' onClick={redirectToHomePage}>Home</div></li>
+                    <li> <div className='home-element' onClick={redirectToAboutMe}>About</div></li>
+                    <li> <div className='home-element' onClick={redirectToMySkills}>Skills</div></li>
+                    <li><div className='home-element' onClick={redirectToMyProjects}>Projects</div></li>
+                </ul>
+                <div className='social-icons'>
+                    <a href="https://github.com/marrikaa" target="_blank" >
+                        <AiFillGithub  className='header-icon' /></a>
+                    <a href="https://www.linkedin.com/in/marika-gachechiladze-573778224/" target="_blank" >
+                        <BsLinkedin  className='header-icon' /></a>
+                    <a href="https://www.hackerrank.com/marikagachechil1" target="_blank">
+                        <FaHackerrank className='header-icon' />
+                    </a>
             </div>
-    </div>
-    
+            </header>
     )
 }
