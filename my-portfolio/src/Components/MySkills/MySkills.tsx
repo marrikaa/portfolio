@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import './MySkills.css'
 import javaScriptLogo from '../images/JavaScript-logo.png'
 import csharpLogo from '../images/csharp-logo.png'
@@ -8,7 +7,7 @@ import dotNETLogo from '../images/dotNet.png'
 import NodeJSLogo from '../images/TypeScript.png'
 import cypressLogo from'../images/cypress.png'
 import jestLogo from '../images/jest.png'
-import TDDLogo from '../images/tdd.png'
+// import TDDLogo from '../images/tdd.png'
 import fireBaseLogo from '../images/firebase.png'
 import expressLogo from '../images/express-js.png'
 import mySQLLogo from'../images/mySQL.png'
@@ -46,10 +45,10 @@ export const MySkills = () => {
         name:"Entity Framework",
         src :entityLogo
     },
-    // {
-    //     name:"SQL Server",
-    //     src :sqlServerLogo
-    // },
+    {
+        name:"SQL Server",
+        src :sqlServerLogo
+    },
     {
         name:"Node.JS",
         src :NodeJSLogo
@@ -90,10 +89,10 @@ export const MySkills = () => {
         name:"Jest",
         src :jestLogo
     },
-    {
-        name:"TDD",
-        src: TDDLogo
-    },
+    // {
+    //     name:"TDD",
+    //     src: TDDLogo
+    // },
     {
         name: "FireBase",
         src: fireBaseLogo
@@ -103,8 +102,8 @@ export const MySkills = () => {
 
     return (
         <div className='skills'>
-            {skills.map(skill => <div className='each-element'>
-            <img className="skill-logo" src={skill.src} />
+            {skills.map((skill, index) => <div className='each-element' key={index}>
+            <img className="skill-logo" src={skill.src} alt="" />
             <h3 className='skill-name'>{skill.name}</h3></div>)}
         </div>
     )
