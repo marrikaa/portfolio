@@ -16,7 +16,7 @@ export const AboutMe = () => {
         Recognizing the growing demand for programming skills in various industries, I decided to broaden my horizons and delve into the exciting world of coding. 
         I have embarked on a dedicated learning journey to become proficient in several programming languages, 
         frameworks, and technologies relevant to full-stack development. I am adept at languages such as 
-        Python, JavaScript, and Java, and I have experience with popular frameworks like Django, React, and Spring Boot.<br /><br />
+        JavaScript, TypeScript and C#, and I have experience with popular frameworks like React.<br /><br />
         As a lifelong learner, I am enthusiastic about continuously enhancing my programming abilities and staying up to date with the latest industry trends.
         I am familiar with concepts such as data structures, algorithms, object-oriented programming, and relational databases, and I am always eager to expand my knowledge further.<br /><br />
         I possess excellent communication skills and thrive in collaborative environments.
