@@ -3,7 +3,6 @@ import { Route,Routes } from 'react-router-dom';
 import { AboutMe } from './Components/AboutMe/AboutMe';
 import { MySkills } from './Components/MySkills/MySkills';
 import { MyProjects } from './Components/MyProjects/MyProjects';
-import { ContactInfo } from './Components/ContactInfo/ContactInfo';
 import { NavBar } from './Components/NavBar/NavBar';
 import { HomePage } from './Components/HomePage/HomePage';
 import { ContanctForm } from './Components/ContactForm/ContactForm';
