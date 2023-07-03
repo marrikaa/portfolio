@@ -60,15 +60,6 @@ export const NavBar = () => {
                     <li> <div className='home-element' onClick={redirectToMySkills}>Skills</div></li>
                     <li><div className='home-element' onClick={redirectToMyProjects}>Projects</div></li>
                 </ul>
-                <div className='social-icons'>
-                    <a href="https://github.com/marrikaa" target="_blank" >
-                        <AiFillGithub  className='header-icon' /></a>
-                    <a href="https://www.linkedin.com/in/marika-gachechiladze-573778224/" target="_blank" >
-                        <BsLinkedin  className='header-icon' /></a>
-                    <a href="https://www.hackerrank.com/marikagachechil1" target="_blank">
-                        <FaHackerrank className='header-icon' />
-                    </a>
-            </div>
-            </header>
+        </header>
     )
 }
