@@ -7,6 +7,7 @@ import {TfiLocationPin} from 'react-icons/tfi'
 import {BsFillTelephoneFill} from 'react-icons/bs'
 import {HiOutlineMail} from  'react-icons/hi'
 import {TbSend} from 'react-icons/tb'
+import { motion } from 'framer-motion';
 
 export const ContanctForm = () => {
 
@@ -18,7 +19,12 @@ export const ContanctForm = () => {
         message.value = '';
       }
     return (
-        <section className="contact">
+        <motion.section 
+        initial={{scaleY: 0}}
+        animate ={{ scaleY:1 }}
+        exit ={{scaleY :0}}
+        transition={{ duration: 1 }}
+        className="contact">
         <h1 className="section-header">Contact</h1>
         <div className="contact-wrapper">
           <form className="form-horizontal contact-form" action="https://formsubmit.co/988e7a4c678bc79436eb3cad1ff870fd"  method="POST" target="_blank">
@@ -62,6 +68,6 @@ export const ContanctForm = () => {
             <hr />
             </div>
         </div>
-      </section>  
+      </motion.section>  
     )
 }

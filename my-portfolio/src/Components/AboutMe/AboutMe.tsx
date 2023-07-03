@@ -1,10 +1,15 @@
+import { motion } from 'framer-motion'
 import './AboutMe.css'
 
 
 export const AboutMe = () => {
 
     return (
-        <div>
+        <motion.div    
+        initial={{scaleY: 0}}
+        animate ={{ scaleY:1 }}
+        exit ={{scaleY :0}}
+        transition={{ duration: 1 }} >
             <p className='about-me'>Hello there! I'm a highly motivated individual with a 
         master's degree in mathematics and a passion for programming. 
         I'm currently transitioning my expertise in mathematics to the world of software development, 
@@ -26,6 +31,6 @@ export const AboutMe = () => {
         I am now actively seeking opportunities to apply my knowledge and skills as a junior full-stack developer. I am eager to join a team that values growth, collaboration, and continuous learning. 
         If you're looking for a dedicated and motivated individual who combines a mathematical background with programming expertise, I would love to connect and discuss how I can contribute to your organization's success.<br /><br />
         Thank you for considering me as a potential candidate. I look forward to the opportunity to contribute to your team and help create exceptional software solutions.</p>
-        </div>
+        </motion.div>
     )
 }

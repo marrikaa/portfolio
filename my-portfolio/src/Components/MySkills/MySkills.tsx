@@ -18,6 +18,7 @@ import restApiLogo from '../images/restApi.png'
 import mochaLogo from '../images/mocha.png'
 import sqlServerLogo from '../images/SQL-logo.png'
 import entityLogo from '../images/Entity.png'
+import { m, motion } from 'framer-motion'
 
 
 export const MySkills = () => {
@@ -101,10 +102,15 @@ export const MySkills = () => {
     
 
     return (
-        <div className='skills'>
+        <motion.div    
+        initial={{scaleY: 0}}
+        animate ={{ scaleY:1 }}
+        exit ={{scaleY :0}}
+        transition={{ duration: 1 }}
+        className='skills'>
             {skills.map((skill, index) => <div className='each-element' key={index}>
             <img className="skill-logo" src={skill.src} alt="" />
             <h3 className='skill-name'>{skill.name}</h3></div>)}
-        </div>
+        </motion.div>
     )
 }

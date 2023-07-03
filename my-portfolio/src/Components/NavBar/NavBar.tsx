@@ -7,6 +7,7 @@ import {AiFillGithub} from 'react-icons/ai'
 import {BsLinkedin} from 'react-icons/bs'
 import {FaHackerrank} from 'react-icons/fa'
 import {SlMenu} from 'react-icons/sl'
+import { m } from 'framer-motion';
 
 
 
@@ -60,6 +61,6 @@ export const NavBar = () => {
                     <li> <div className='home-element' onClick={redirectToMySkills}>Skills</div></li>
                     <li><div className='home-element' onClick={redirectToMyProjects}>Projects</div></li>
                 </ul>
-        </header>
+        </header >
     )
 }

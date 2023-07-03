@@ -5,12 +5,18 @@ import foodHub from '../images/projectsImages/foodHub.png'
 import quote from '../images/projectsImages/quotes.png'
 import {AiFillGithub} from 'react-icons/ai'
 import {MdWebhook} from 'react-icons/md'
+import { motion } from 'framer-motion'
 
 
 export const MyProjects = () => {
 
     return (
-        <div className='projects-container'>
+        <motion.div    
+        initial={{scaleY: 0}}
+        animate ={{ scaleY:1 }}
+        exit ={{scaleY :0}}
+        transition={{ duration: 1 }} 
+        className='projects-container'>
             <div className='project-item-card'> 
             <h2 className='color'>HachTogether</h2>
             <div className='links'>
@@ -61,6 +67,6 @@ export const MyProjects = () => {
                 The application provides a convenient and organized way for users to discover, collect, and curate their favorite quotes. 
                 It empowers users to find inspiration, save meaningful quotes, and even contribute their own uplifting words to their collection.</p>   
             </div>
-        </div>
+        </motion.div>
     )
 }

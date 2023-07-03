@@ -9,7 +9,7 @@ import {FaHackerrank} from 'react-icons/fa'
 import {MdEmail} from 'react-icons/md'
 import Typed from "typed.js";
 import { useEffect, useRef } from 'react';
-import { m } from 'framer-motion';
+import { m, motion } from 'framer-motion';
 
 export const HomePage = () => {
     const navigate = useNavigate();
@@ -40,7 +40,11 @@ export const HomePage = () => {
   }, []);
     return (
         <>
-        <div 
+        <motion.div    
+        initial={{scaleY: 0}}
+        animate ={{ scaleY:1 }}
+        exit ={{scaleY :0}}
+        transition={{ duration: 1 }}
             className='homepage'>
             <span><img src={profilePicture} alt="profile" className='profile-picture' /></span>
             <div className='homepage-text'>
@@ -65,6 +69,6 @@ export const HomePage = () => {
                 rel="noopener noreferrer" className='resume'>Resume<IoMdOpen /></a>
                 <a className='resume' onClick={redirectToContactForm}>Let's Contact<BiMailSend /></a></div>
             </div>
-        </div></>
+        </motion.div></>
     )
 }
