@@ -15,7 +15,7 @@
     width: 100%;
     z-index: 3;
     display: flex;
-    justify-content: space-between;
+  
   }
   
   .header ul {
@@ -115,7 +115,7 @@
     }
     .header .menu {
       clear: none;
-      float: right;
+      float: left;
       max-height: none;
     }
     .header .menu-icon {

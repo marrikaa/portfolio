@@ -10,6 +10,10 @@ import {MdEmail} from 'react-icons/md'
 import Typed from "typed.js";
 import { useEffect, useRef } from 'react';
 import { m, motion } from 'framer-motion';
+import { AboutMe } from '../AboutMe/AboutMe';
+import { MySkills } from '../MySkills/MySkills';
+import { MyProjects } from '../MyProjects/MyProjects';
+import { ContanctForm } from '../ContactForm/ContactForm';
 
 export const HomePage = () => {
     const navigate = useNavigate();
@@ -69,6 +73,7 @@ export const HomePage = () => {
                 rel="noopener noreferrer" className='resume'>Resume<IoMdOpen /></a>
                 <a className='resume' onClick={redirectToContactForm}>Let's Contact<BiMailSend /></a></div>
             </div>
-        </motion.div></>
+        </motion.div>
+        </>
     )
 }
