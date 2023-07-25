@@ -2,9 +2,14 @@
     width: 350px;
     height: auto;
     align-items: center;
-    margin: 1rem;
 }
 
+.short-description{
+    line-height: 2rem;
+    font-size: larger;
+    font-family:'Times New Roman';
+    font-weight: lighter;
+}
 .homepage-text{
     align-items: center;
     text-align: center;
@@ -13,14 +18,15 @@
 }
 
 .homepage{
-    
     display: flex;
     flex-direction: column;
-    color: rgba(58,58,58,255);
+    color: white;
     justify-content: center;
     text-align: center;
     vertical-align: middle;
     margin-top: 5rem;
+    font-weight: lighter;
+    line-height: 2rem;
 }
 .title{
     font-size: larger;
@@ -33,7 +39,7 @@
     border-radius: 2px;
     padding: 10px;
     border: none;
-    background: linear-gradient(109.6deg, #c3c1c1 11.2%, #e5e1de 91.1%);
+    background: linear-gradient(109.6deg, #c3c1c1 11.2%, #959595 91.1%);
     margin-right: 1rem;
 }
 
@@ -47,6 +53,9 @@
 }
 
 @media (min-width: 800px) {
+    .profile-picture{
+        margin-top: 5rem;
+    }
     .homepage{
         flex-direction: row;
         margin-top: 5rem;

@@ -1,11 +1,9 @@
 body{
-  /* background-image:
-  url("https://img.freepik.com/free-photo/abstract-plexus-blue-geometrical-shapes-connection-ai-generated-image_511042-595.jpg?w=2000&t=st=1684159814~exp=1684160414~hmac=2b6dbb2dacbdab3dd265d05a08554e3f0de1dfe6a829f7171078618f8556ad86");
-  position: relative; */
-  background: #e9e5e4 no-repeat !important;;
+  background-image:
+  url('https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg');
+  position: relative;
   height: 100vh;
   position: relative;
-
 }
 
 @media (min-width: 700px) {

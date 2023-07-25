@@ -3,19 +3,19 @@
     padding: 0rem 1rem;
     width: 1.5rem;
     height: auto;
-    color: rgba(58,58,58,255)
+    color: white
 }
 
 .header-icon:hover{
     height: auto;
-    color: rgb(126, 126, 126);
+    color: rgb(236, 213, 192);
 }
 
 .header { 
     width: 100%;
     z-index: 3;
     display: flex;
-  
+
   }
   
   .header ul {
@@ -28,7 +28,7 @@
   .header li div {
     display: block;
     text-decoration: none;
-    color: rgba(58,58,58,255);
+    color: white;
     font-size: 20px;
     margin: 1rem;
     text-align: center;
@@ -37,7 +37,7 @@
   .header li div:hover {
     cursor: pointer;
     text-decoration: underline;
-    color: rgb(126, 126, 126);
+    color:  #cecece;
 }
   
   .header .menu {
@@ -64,7 +64,7 @@
   
   .header .menu-icon .navicon:before,
   .header .menu-icon .navicon:after {
-    background: #333;
+    background: rgb(255, 255, 255);
     content: '';
     display: block;
     height: 100%;

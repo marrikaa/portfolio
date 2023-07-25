@@ -1,13 +1,5 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import'./NavBar.css'
-import linkedinIcon from '../images/socialIcons/linkeDin.png'
-import hackerRankIcon from '../images/socialIcons/hackerRank.png'
-import {AiFillGithub} from 'react-icons/ai'
-import {BsLinkedin} from 'react-icons/bs'
-import {FaHackerrank} from 'react-icons/fa'
-import {SlMenu} from 'react-icons/sl'
-import { m } from 'framer-motion';
 
 
 
@@ -36,13 +28,7 @@ export const NavBar = () => {
               console.error();    
           }
     }
-    const redirectToContactInfo = async() => {
-        try{
-            navigate(`/contactInfo`)  
-          }catch{
-              console.error();    
-          }
-    }
+
     const redirectToHomePage = async() => {
         try{
             navigate(`/`)  

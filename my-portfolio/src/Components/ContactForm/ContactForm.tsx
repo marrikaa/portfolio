@@ -8,22 +8,15 @@ import {BsFillTelephoneFill} from 'react-icons/bs'
 import {HiOutlineMail} from  'react-icons/hi'
 import {TbSend} from 'react-icons/tb'
 import { motion } from 'framer-motion';
+import { MdEmail } from 'react-icons/md';
 
 export const ContanctForm = () => {
-
-   const formSubmitHandler=(event : React.FormEvent<HTMLFormElement>)=>{
-        event.preventDefault();
-        const { username, email, message  } = event.currentTarget;
-        username.value = '';
-        email.value = '';
-        message.value = '';
-      }
     return (
         <motion.section 
         initial={{scaleY: 0}}
         animate ={{ scaleY:1 }}
         exit ={{scaleY :0}}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.5 }}
         className="contact">
         <h1 className="section-header">Contact</h1>
         <div className="contact-wrapper">
@@ -43,8 +36,9 @@ export const ContanctForm = () => {
           
             <div className="direct-contact-container">
                 <div className="list-item">
-                    <TfiLocationPin className='contact-icon' />
-                    <span className="contact-text">Amsterdam, Netherlands</span></div>
+                  <TfiLocationPin className='contact-icon' />
+                  <span className="contact-text">Amsterdam, Netherlands</span>
+                </div>
                  <div className="list-item">
                     <BsFillTelephoneFill className='contact-icon' />
                     <span className="contact-text">(+31) 6 16480225</span>
@@ -52,18 +46,22 @@ export const ContanctForm = () => {
                 <div className="list-item">
                     <HiOutlineMail className='contact-icon' />
                     <span className="contact-text">
-                        <a href="mailto:MarikaGachechiladze0@gmail.com" title="Send me an email">
-                          MarikaGachechiladze0@gmail.com</a></span>
+                      <a href="mailto:MarikaGachechiladze0@gmail.com" title="Send me an email">
+                        MarikaGachechiladze0@gmail.com</a>
+                    </span>
                 </div>      
             <hr />
             <div className="social-media-list">
-                <a href="https://www.hackerrank.com/marikagachechil1" target="_blank">
-                    <AiFillGithub  /></a>
-                <a href="https://www.linkedin.com/in/marika-gachechiladze-573778224/" target="_blank" >
-                    <BsLinkedin  /></a>
-                <a href="https://www.hackerrank.com/marikagachechil1" target="_blank">
-                    <FaHackerrank  />
+                <a href="https://www.hackerrank.com/marikagachechil1" target="_blank" rel="noreferrer">
+                    <AiFillGithub className='icon' /></a>
+                <a href="https://www.linkedin.com/in/marika-gachechiladze-573778224/" target="_blank" rel="noreferrer">
+                    <BsLinkedin className='icon' /></a>
+                <a href="https://www.hackerrank.com/marikagachechil1" target="_blank" rel="noreferrer" >
+                    <FaHackerrank className='icon'  />
                 </a>
+                <a href="mailto:MarikaGachechiladze0@gmail.com">
+                        <MdEmail className='icon' />
+                    </a>
             </div>
             <hr />
             </div>

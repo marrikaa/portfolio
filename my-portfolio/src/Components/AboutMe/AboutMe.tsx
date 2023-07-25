@@ -9,7 +9,7 @@ export const AboutMe = () => {
         initial={{scaleY: 0}}
         animate ={{ scaleY:1 }}
         exit ={{scaleY :0}}
-        transition={{ duration: 1 }} >
+        transition={{ duration: 0.5 }} >
             <p className='about-me'>Hello there! I'm a highly motivated individual with a 
         master's degree in mathematics and a passion for programming. 
         I'm currently transitioning my expertise in mathematics to the world of software development, 

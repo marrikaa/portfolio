@@ -9,11 +9,7 @@ import {FaHackerrank} from 'react-icons/fa'
 import {MdEmail} from 'react-icons/md'
 import Typed from "typed.js";
 import { useEffect, useRef } from 'react';
-import { m, motion } from 'framer-motion';
-import { AboutMe } from '../AboutMe/AboutMe';
-import { MySkills } from '../MySkills/MySkills';
-import { MyProjects } from '../MyProjects/MyProjects';
-import { ContanctForm } from '../ContactForm/ContactForm';
+import { motion } from 'framer-motion';
 
 export const HomePage = () => {
     const navigate = useNavigate();
@@ -48,24 +44,24 @@ export const HomePage = () => {
         initial={{scaleY: 0}}
         animate ={{ scaleY:1 }}
         exit ={{scaleY :0}}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.5 }}
             className='homepage'>
             <span><img src={profilePicture} alt="profile" className='profile-picture' /></span>
             <div className='homepage-text'>
                 <h3>Hello it's me </h3>
                 <h1>Marika Gachechiladze</h1>
                 <h3>And I'm a &nbsp;<span className='title' ref={el}/></h3>
-                <p className='home-about-me'> I'm a highly motivated individual with a master's degree in mathematics and a passion for programming.<br />I'm currently transitioning my expertise in mathematics to the world of software development, <br />with a specific interest in becoming a junior full-stack developer.</p>
-                <div className='social-icons'>
+                <p className='short-description'> I'm a highly motivated individual with a master's degree in mathematics and a passion for programming.<br />I'm currently transitioning my expertise in mathematics to the world of software development, <br />with a specific interest in becoming a junior full-stack developer.</p>
+                <div className='social-media-list'>
                     <a href="https://github.com/marrikaa" target="_blank" >
-                        <AiFillGithub  className='header-icon' /></a>
+                        <AiFillGithub  className='icon' /></a>
                     <a href="https://www.linkedin.com/in/marika-gachechiladze-573778224/" target="_blank" >
-                        <BsLinkedin  className='header-icon' /></a>
+                        <BsLinkedin  className='icon' /></a>
                     <a href="https://www.hackerrank.com/marikagachechil1" target="_blank">
-                        <FaHackerrank className='header-icon' />
+                        <FaHackerrank className='icon' />
                     </a>
                     <a href="mailto:MarikaGachechiladze0@gmail.com">
-                        <MdEmail className='header-icon' />
+                        <MdEmail className='icon' />
                     </a>
                 </div>
                 <div className='home-header'>
