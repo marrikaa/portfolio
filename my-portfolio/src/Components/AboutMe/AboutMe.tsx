@@ -20,7 +20,7 @@ export const AboutMe = () => {
         Recognizing the growing demand for programming skills in various industries, I decided to broaden my horizons and delve into the exciting world of coding. 
         I have embarked on a dedicated learning journey to become proficient in several programming languages, 
         frameworks, and technologies relevant to full-stack development. I am adept at languages such as 
-        JavaScript, TypeScript and C#, and I have experience with popular frameworks like React.<br /><br />
+        JavaScript, TypeScript and C#, and I have experience with popular frameworks like React and .NET<br /><br />
         As a lifelong learner, I am enthusiastic about continuously enhancing my programming abilities and staying up to date with the latest industry trends.
         I am familiar with concepts such as data structures, algorithms, object-oriented programming, and relational databases, and I am always eager to expand my knowledge further.<br /><br />
         I possess excellent communication skills and thrive in collaborative environments.
@@ -30,7 +30,7 @@ export const AboutMe = () => {
         I am excited to bring my analytical skills and attention to detail to the world of software development and contribute to building exceptional applications.<br /><br />
         I am now actively seeking opportunities to apply my knowledge and skills as a junior full-stack developer. I am eager to join a team that values growth, collaboration, and continuous learning. 
         If you're looking for a dedicated and motivated individual who combines a mathematical background with programming expertise, I would love to connect and discuss how I can contribute to your organization's success.<br /><br />
-        Thank you for considering me as a potential candidate. I look forward to the opportunity to contribute to your team and help create exceptional software solutions.</p>
+    </p>
         </motion.div>
     )
 }
